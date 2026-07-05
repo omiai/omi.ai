@@ -209,6 +209,17 @@
             scroll-margin-top: 72px;
         }
 
+        /* Anchor landing offset that works without scroll-margin support:
+           the jump target sits 72px above the section content, so the
+           sticky nav never covers the heading. */
+        .jump-anchor {
+            position: relative;
+            top: -72px;
+            display: block;
+            height: 0;
+            visibility: hidden;
+        }
+
         section {
             padding-top: 88px;
         }
@@ -551,7 +562,8 @@
     </header>
 
     <main class="article">
-        <section id="what-is-it">
+        <section>
+            <span class="jump-anchor" id="what-is-it"></span>
             <p class="section-no">I. The Premise</p>
             <h2>Not a love marriage — a contract marriage</h2>
             <p>In much of the world, there is one accepted way for a marriage to come into being: romance. You meet someone by chance, feelings develop, and the relationship follows the feelings — if all goes well, into marriage. That is a <strong>love marriage</strong>, and Japan has it too.</p>
@@ -601,7 +613,8 @@
 
         <p class="divider" aria-hidden="true">・・・</p>
 
-        <section id="the-four-stages">
+        <section>
+            <span class="jump-anchor" id="the-four-stages"></span>
             <p class="section-no">II. The Path</p>
             <h2>Four stages, from first meeting to engagement</h2>
             <p>The journey is divided into clearly named stages. Every member knows which stage they are in with each person, and the rules of each stage are understood by everyone. There is no ambiguity of the "so… what are we?" kind.</p>
@@ -639,7 +652,8 @@
 
         <p class="divider" aria-hidden="true">・・・</p>
 
-        <section id="not-cheating">
+        <section>
+            <span class="jump-anchor" id="not-cheating"></span>
             <p class="section-no">III. The Misunderstood Part</p>
             <h2>Why dating several people at once is not cheating here</h2>
             <p>If you come from a dating culture where seeing multiple people at the same time is a betrayal, the Pre-Kousai stage can look shocking at first. We want to explain this honestly and directly, because it is the single most misunderstood part of the system.</p>
@@ -698,7 +712,8 @@
 
         <p class="divider" aria-hidden="true">・・・</p>
 
-        <section id="support">
+        <section>
+            <span class="jump-anchor" id="support"></span>
             <p class="section-no">IV. The Support</p>
             <h2>You are not doing this alone</h2>
             <p>A final feature worth knowing: throughout all of these stages, each member is supported by a professional matchmaker or counselor at their agency. The matchmaker arranges the omiai, relays each side's intentions after meetings, advises members between dates, and helps navigate the transitions between stages. Difficult messages — declining another meeting, ending a trial relationship — are passed through the agency, which keeps the process courteous and spares both sides unnecessary hurt.</p>
@@ -707,7 +722,8 @@
 
         <p class="divider" aria-hidden="true">・・・</p>
 
-        <section id="summary">
+        <section>
+            <span class="jump-anchor" id="summary"></span>
             <p class="section-no">V. In Summary</p>
             <h2>The system at a glance</h2>
             <ul>
