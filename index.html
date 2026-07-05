@@ -5,22 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marriage Agencies in Japan — How the Kekkon Soudanjo System Works</title>
     <meta name="description" content="An honest, plain-language guide to Japan's marriage agency (kekkon soudanjo) system for international readers: Omiai, Pre-Kousai, Shinken Kousai, engagement — and why dating multiple people early on is not cheating.">
-    <link rel="alternate" hreflang="en" href="https://omi.ai/">
-    <link rel="alternate" hreflang="ja" href="https://omi.ai/ja/">
-    <link rel="alternate" hreflang="x-default" href="https://omi.ai/">
-    <script>
-        // Language branch: browsers whose default language is Japanese get /ja/,
-        // unless the visitor has explicitly chosen a language via the switcher.
-        (function () {
-            try {
-                var stored = localStorage.getItem('preferredLang');
-                var wantsJa = stored ? stored === 'ja' : /^ja/i.test(navigator.language || '');
-                if (wantsJa && !/^\/ja(\/|$)/.test(location.pathname)) {
-                    location.replace('/ja/');
-                }
-            } catch (e) { /* storage unavailable: stay on English */ }
-        })();
-    </script>
     <style>
         * {
             margin: 0;
@@ -108,28 +92,6 @@
         .nav-links a:hover {
             color: var(--thread);
             border-bottom-color: var(--thread);
-        }
-
-        .nav-right {
-            display: flex;
-            align-items: baseline;
-            gap: 26px;
-        }
-
-        .lang-switch {
-            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-            font-size: 12px;
-            letter-spacing: 0.12em;
-            color: var(--thread);
-            text-decoration: none;
-            border: 1px solid var(--thread);
-            padding: 4px 14px;
-            white-space: nowrap;
-        }
-
-        .lang-switch:hover {
-            background: var(--thread);
-            color: var(--paper);
         }
 
         /* ---------- Hero ---------- */
@@ -579,15 +541,12 @@
     <nav>
         <div class="nav-inner">
             <a class="wordmark" href="#top">Marriage in Japan<span class="dot">.</span></a>
-            <div class="nav-right">
-                <div class="nav-links">
-                    <a href="#what-is-it">The Premise</a>
-                    <a href="#the-four-stages">The Four Stages</a>
-                    <a href="#not-cheating">Not Cheating?</a>
-                    <a href="#support">Support</a>
-                    <a href="#summary">Summary</a>
-                </div>
-                <a class="lang-switch" data-lang="ja" href="/ja/" lang="ja">日本語</a>
+            <div class="nav-links">
+                <a href="#what-is-it">The Premise</a>
+                <a href="#the-four-stages">The Four Stages</a>
+                <a href="#not-cheating">Not Cheating?</a>
+                <a href="#support">Support</a>
+                <a href="#summary">Summary</a>
             </div>
         </div>
     </nav>
@@ -783,13 +742,5 @@
             <p>This page explains the general marriage-agency system in Japan for an international audience.</p>
         </div>
     </footer>
-    <script>
-        // Remember an explicit language choice so the automatic branch respects it.
-        document.querySelectorAll('[data-lang]').forEach(function (a) {
-            a.addEventListener('click', function () {
-                try { localStorage.setItem('preferredLang', a.getAttribute('data-lang')); } catch (e) {}
-            });
-        });
-    </script>
 </body>
 </html>
