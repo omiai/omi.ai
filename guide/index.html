@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Japan's Marriage Agencies Work — A Guide for International Readers</title>
+    <meta name="description" content="An honest, plain-language explanation of Japan's kekkon soudanjo (marriage agency) system: Omiai, Pre-Kousai, Shinken Kousai, and engagement — and why dating multiple people early on is not cheating.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --paper: #faf7f1;
+            --paper-deep: #f2ede3;
+            --ink: #26231e;
+            --ink-soft: #6b6459;
+            --thread: #a03e33;      /* the red thread — en-musubi crimson */
+            --thread-soft: #c98077;
+            --rule: #ddd5c7;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Iowan Old Style, 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+            background: var(--paper);
+            color: var(--ink);
+            line-height: 1.85;
+            font-size: 17px;
+        }
+
+        .frame {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* ---------- Masthead ---------- */
+
+        header {
+            padding: 88px 0 56px;
+            border-bottom: 1px solid var(--rule);
+            position: relative;
+        }
+
+        .kicker {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: var(--thread);
+            margin-bottom: 26px;
+        }
+
+        header h1 {
+            font-size: 44px;
+            line-height: 1.22;
+            font-weight: 500;
+            letter-spacing: 0.005em;
+            margin-bottom: 26px;
+            max-width: 620px;
+        }
+
+        header .standfirst {
+            font-size: 19px;
+            color: var(--ink-soft);
+            font-style: italic;
+            max-width: 560px;
+        }
+
+        .jp-mark {
+            position: absolute;
+            top: 84px;
+            right: 0;
+            writing-mode: vertical-rl;
+            font-size: 30px;
+            letter-spacing: 0.42em;
+            color: var(--ink);
+            opacity: 0.16;
+            user-select: none;
+            pointer-events: none;
+            font-weight: 500;
+        }
+
+        /* ---------- Article body ---------- */
+
+        main {
+            padding: 24px 0 40px;
+        }
+
+        section {
+            margin-top: 72px;
+        }
+
+        .section-no {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            color: var(--thread);
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: 29px;
+            font-weight: 500;
+            line-height: 1.35;
+            margin-bottom: 22px;
+        }
+
+        h3 {
+            font-size: 19px;
+            font-weight: 600;
+            margin: 34px 0 10px;
+        }
+
+        p {
+            margin-bottom: 18px;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        .jp {
+            color: var(--ink-soft);
+            font-size: 0.92em;
+        }
+
+        ul {
+            margin: 0 0 18px 22px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Pull quote / key premise */
+        .pull {
+            margin: 36px 0;
+            padding: 6px 0 6px 26px;
+            border-left: 2px solid var(--thread);
+        }
+
+        .pull p {
+            font-size: 21px;
+            line-height: 1.6;
+            font-style: italic;
+            color: var(--ink);
+            margin: 0;
+        }
+
+        .pull .who {
+            display: block;
+            margin-top: 10px;
+            font-style: normal;
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--thread);
+        }
+
+        /* ---------- Timeline (the red thread) ---------- */
+
+        .timeline {
+            list-style: none;
+            margin: 44px 0 8px;
+            padding: 0;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 6px;
+            bottom: 6px;
+            left: 7px;
+            width: 2px;
+            background: var(--thread-soft);
+        }
+
+        .timeline > li {
+            position: relative;
+            padding: 0 0 44px 44px;
+        }
+
+        .timeline > li:last-child {
+            padding-bottom: 4px;
+        }
+
+        .timeline > li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--paper);
+            border: 2px solid var(--thread);
+        }
+
+        .timeline > li:last-child::before {
+            background: var(--thread);
+        }
+
+        .timeline .stage-kanji {
+            font-size: 15px;
+            color: var(--thread);
+            letter-spacing: 0.14em;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .timeline h3 {
+            margin: 0 0 4px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .timeline .romaji {
+            display: block;
+            font-style: italic;
+            color: var(--ink-soft);
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        .timeline p {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .timeline p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ---------- Comparison table ---------- */
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 30px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 560px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        caption {
+            caption-side: top;
+            text-align: left;
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--thread);
+            padding-bottom: 12px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 14px 18px 14px 0;
+            border-bottom: 1px solid var(--rule);
+            vertical-align: top;
+        }
+
+        thead th {
+            border-bottom: 2px solid var(--ink);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        tbody th {
+            font-weight: 600;
+            white-space: nowrap;
+            font-size: 14px;
+            color: var(--ink-soft);
+        }
+
+        /* ---------- In-short box ---------- */
+
+        .inshort {
+            background: var(--paper-deep);
+            padding: 28px 30px;
+            margin: 36px 0;
+        }
+
+        .inshort .label {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 12px;
+            letter-spacing: 0.24em;
+            text-transform: uppercase;
+            color: var(--thread);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .inshort p {
+            margin: 0;
+            font-size: 17px;
+        }
+
+        /* ---------- Section divider ---------- */
+
+        .divider {
+            text-align: center;
+            color: var(--thread);
+            letter-spacing: 0.9em;
+            margin: 72px 0 0;
+            font-size: 14px;
+            user-select: none;
+        }
+
+        /* ---------- Footer ---------- */
+
+        footer {
+            margin-top: 88px;
+            border-top: 1px solid var(--rule);
+            padding: 36px 0 64px;
+            color: var(--ink-soft);
+            font-size: 14.5px;
+        }
+
+        footer a {
+            color: var(--thread);
+        }
+
+        /* ---------- Mobile ---------- */
+
+        @media (max-width: 640px) {
+            body {
+                font-size: 16px;
+            }
+
+            .frame {
+                padding: 0 20px;
+            }
+
+            header {
+                padding: 56px 0 40px;
+            }
+
+            header h1 {
+                font-size: 31px;
+            }
+
+            header .standfirst {
+                font-size: 17px;
+            }
+
+            .jp-mark {
+                display: none;
+            }
+
+            section {
+                margin-top: 56px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .pull p {
+                font-size: 18px;
+            }
+
+            .timeline > li {
+                padding-left: 36px;
+            }
+
+            .inshort {
+                padding: 22px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <header>
+            <p class="kicker">A Guide for International Readers</p>
+            <h1>How Japan's Marriage Agencies Work</h1>
+            <p class="standfirst">Japan maintains a deliberate, rules-based path to marriage that runs parallel to romantic dating. This is what it is, how its four stages unfold, and why its customs are more honest than they may first appear.</p>
+            <span class="jp-mark" aria-hidden="true">結婚相談所</span>
+        </header>
+
+        <main>
+            <section id="what-is-it">
+                <p class="section-no">I. The Premise</p>
+                <h2>This is not dating as you know it</h2>
+                <p>In much of the world, marriage is expected to grow out of romance: you meet someone by chance, fall in love, and — perhaps years later — decide to marry. Japan has that too. But Japan also maintains a second, parallel path to marriage that is deliberately <em>not</em> built on chance: the <strong>marriage agency</strong> <span class="jp">(結婚相談所, kekkon soudanjo)</span>.</p>
+                <p>The most useful way to understand this system is as a form of <strong>contract marriage</strong> — marriage approached as a shared goal and a mutual agreement, rather than as the eventual outcome of a romance that happened to work out. Everyone who joins a marriage agency has already decided one thing before meeting anyone: <em>they intend to marry</em>. What the system provides is a structured, rules-based process for two such people to find each other, test their compatibility, and reach an engagement — typically within months, not years.</p>
+                <div class="pull">
+                    <p>Marriage is the explicit starting agreement, not a distant possibility. Love is expected to grow within the process — it is not the entry requirement for it.</p>
+                    <span class="who">The key premise</span>
+                </div>
+                <p>This is the modern descendant of Japan's traditional <em>omiai</em> (arranged introduction) culture. It is not a lesser form of marriage than a love marriage — it is a different one, with a different philosophy: choose a partner deliberately, with clear information and honest intentions on both sides, and let affection deepen on that foundation.</p>
+                <p>Most agencies in Japan belong to large nationwide matchmaking networks that share a common member database and a common rulebook. The process described below follows the standard system used across one of Japan's largest such networks, so what you read here reflects how the mainstream of this industry actually operates.</p>
+            </section>
+
+            <p class="divider" aria-hidden="true">・・・</p>
+
+            <section id="the-four-stages">
+                <p class="section-no">II. The Path</p>
+                <h2>Four stages, from first meeting to engagement</h2>
+                <p>The journey is divided into clearly named stages. Every member knows which stage they are in with each person, and the rules of each stage are understood by everyone. There is no ambiguity of the "so… what are we?" kind.</p>
+
+                <ol class="timeline">
+                    <li>
+                        <span class="stage-kanji">お見合い</span>
+                        <h3>Omiai — the first meeting</h3>
+                        <span class="romaji">omiai</span>
+                        <p>Members browse detailed, verified profiles and request meetings. If both sides accept, an <em>omiai</em> is arranged: a first meeting of about one hour, typically over tea or coffee in a hotel lounge. It is polite, low-pressure, and has one purpose — to see whether you would both like to meet again.</p>
+                        <p>Afterwards, each person independently tells the agency yes or no. Only if <em>both</em> say yes does the relationship move forward. A "no" is delivered through the agency, so nobody has to reject anyone face-to-face.</p>
+                    </li>
+                    <li>
+                        <span class="stage-kanji">プレ交際</span>
+                        <h3>Pre-Kousai — trial dating</h3>
+                        <span class="romaji">pre-kousai; sometimes kari-kousai (仮交際)</span>
+                        <p>When both people want to continue after the omiai, they enter <strong>trial dating</strong>. They exchange contact details and go on ordinary dates — meals, walks, day trips — to find out whether the compatibility is real.</p>
+                        <p><strong>Important:</strong> during this stage, each person may be in trial dating with <em>several</em> people at the same time. This is fully within the rules, everyone in the system knows it, and it is not considered cheating. This point surprises many readers from other countries, so the next section explains it properly.</p>
+                    </li>
+                    <li>
+                        <span class="stage-kanji">真剣交際</span>
+                        <h3>Shinken Kousai — exclusive, serious dating</h3>
+                        <span class="romaji">shinken kousai</span>
+                        <p>When one connection stands out, the couple agrees to enter <strong>serious dating</strong>. At this moment, both people end all of their other trial relationships and stop accepting new omiai requests. From here on, the relationship is strictly one-to-one and exclusive.</p>
+                        <p>This is the stage where the couple talks concretely about married life: living arrangements, work, finances, family, children. The goal is to reach a confident mutual decision about marriage, usually within a few months.</p>
+                    </li>
+                    <li>
+                        <span class="stage-kanji">婚約成立</span>
+                        <h3>Engagement — the goal of the process</h3>
+                        <span class="romaji">kon'yaku seiritsu; called seikon (成婚) in agency terms</span>
+                        <p>When both partners are sure, there is a proposal and the couple becomes engaged. In agency terminology this is called <em>seikon</em> — "successful marriage outcome" — and it marks the completion of the agency process. The couple leaves the agency and proceeds to their wedding as any engaged couple would.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <p class="divider" aria-hidden="true">・・・</p>
+
+            <section id="not-cheating">
+                <p class="section-no">III. The Misunderstood Part</p>
+                <h2>Why dating several people at once is not cheating here</h2>
+                <p>If you come from a dating culture where seeing multiple people at the same time is a betrayal, the Pre-Kousai stage can look shocking at first. We want to explain this honestly and directly, because it is the single most misunderstood part of the system.</p>
+
+                <h3>1. It is an official rule that everyone has agreed to</h3>
+                <p>Concurrent trial dating is not a loophole or something people do behind each other's backs. It is written into the system's rules, explained to every member when they join, and understood by every person you will meet. When two people begin Pre-Kousai, <em>both</em> of them know the other may also be seeing other candidates. There is no deception — and cheating, at its core, is a breach of trust through deception. Where there is no deception and no violated agreement, there is no cheating.</p>
+
+                <h3>2. Trial dating is not yet a relationship</h3>
+                <p>In this community, Pre-Kousai is understood as a <strong>compatibility-testing period</strong>, not as being boyfriend and girlfriend. The commitment of exclusivity has simply not been made yet — by anyone, to anyone. It is closer in spirit to a series of respectful interviews for the most important partnership of your life than to a romance already in progress.</p>
+
+                <h3>3. Exclusivity has a clear, formal beginning</h3>
+                <p>What makes this workable is that the system draws a bright, unmistakable line: the moment a couple enters <strong>Shinken Kousai (serious dating), exclusivity begins</strong> — completely. All other trial relationships are formally ended, and seeing anyone else from that point on <em>would</em> be a genuine violation, treated seriously by the agency. So it is not that this culture lacks fidelity; it is that fidelity begins at a clearly agreed moment, rather than at an ambiguous, unspoken one.</p>
+
+                <h3>A cultural comparison</h3>
+                <p>It may help to see that cultures differ mainly in <em>when</em> exclusivity is assumed to start — not in whether it matters:</p>
+                <div class="table-wrap">
+                    <table>
+                        <caption>When does exclusivity begin?</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Typical Western dating</th>
+                                <th scope="col">Japanese marriage agency system</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Early stage</th>
+                                <td>"Casually dating" — seeing multiple people is often accepted, but the boundaries are unspoken and vary by person</td>
+                                <td>Pre-Kousai — seeing multiple people is an explicit, universal rule known to all</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Exclusivity begins</th>
+                                <td>Negotiated informally ("the talk"); timing varies and is a common source of misunderstanding</td>
+                                <td>At the formal transition to Shinken Kousai — a defined moment both partners declare</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">After exclusivity</th>
+                                <td>Seeing others is cheating</td>
+                                <td>Seeing others is cheating — and a violation of agency rules</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Endpoint</th>
+                                <td>Open-ended; marriage may or may not be the goal</td>
+                                <td>Marriage is the declared goal for every participant from day one</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Seen this way, the agency system is arguably <em>more</em> transparent than informal dating: every participant knows exactly what stage they are in, what the other person may be doing, and what has and has not been promised. The rules protect everyone's honesty rather than undermining it.</p>
+                <div class="inshort">
+                    <span class="label">In short</span>
+                    <p>Within Japan's marriage-agency community, dating several people during Pre-Kousai is honest participation in an agreed process. Cheating, in the true sense, only becomes possible once exclusivity has been formally promised — and at that point, the system condemns it as firmly as any culture does.</p>
+                </div>
+            </section>
+
+            <p class="divider" aria-hidden="true">・・・</p>
+
+            <section id="support">
+                <p class="section-no">IV. The Support</p>
+                <h2>You are not doing this alone</h2>
+                <p>A final feature worth knowing: throughout all of these stages, each member is supported by a professional matchmaker or counselor at their agency. The matchmaker arranges the omiai, relays each side's intentions after meetings, advises members between dates, and helps navigate the transitions between stages. Difficult messages — declining another meeting, ending a trial relationship — are passed through the agency, which keeps the process courteous and spares both sides unnecessary hurt.</p>
+                <p>This support structure is a large part of why the system works: honest communication is built into the machinery, rather than left to chance and courage.</p>
+            </section>
+
+            <p class="divider" aria-hidden="true">・・・</p>
+
+            <section id="summary">
+                <p class="section-no">V. In Summary</p>
+                <h2>The system at a glance</h2>
+                <ul>
+                    <li>Japan's marriage agencies offer a <strong>structured, contract-like path to marriage</strong>, distinct from love marriage — marriage is the shared goal from the very first meeting.</li>
+                    <li>The process moves through four defined stages: <strong>Omiai → Pre-Kousai → Shinken Kousai → Engagement</strong>.</li>
+                    <li>During <strong>Pre-Kousai</strong>, dating several candidates at once is an explicit rule that all members have agreed to. Because there is no deception and no broken promise, it is <strong>not cheating</strong> within this community.</li>
+                    <li><strong>Exclusivity begins at Shinken Kousai</strong> — a formal, mutual declaration — and from that point the couple is fully committed to each other.</li>
+                    <li>The process is designed for clarity, honesty, and respect at every step, with professional support throughout.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>This page explains the general marriage-agency system in Japan for an international audience.</p>
+        </footer>
+    </div>
+</body>
+</html>
